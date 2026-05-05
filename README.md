@@ -1,11 +1,11 @@
-### easy_puss
+### easy_pues
 *A lightweight toolkit for processing, cleaning, and interpreting ICP-OES analytical data.*
 
-easy_puss provides a set of convenience classes to streamline the workflow around ICP-OES data. It focuses on reading raw exports, cleaning and harmonizing element measurements, applying LOD/LOQ rules, and preparing results for downstream analysis or reporting.
+easy_pues provides a set of convenience classes to streamline the workflow around ICP-OES data. It focuses on reading raw exports, cleaning and harmonizing element measurements, applying LOD/LOQ rules, and preparing results for downstream analysis or reporting.
 
 The package is designed to be simple, predictable, and easy to integrate into existing Python data pipelines.
 
-![Easy Puss Mascot](docs/images/easy_puss_mascot.png)
+![Easy Pues Mascot](docs/images/easy_pues_mascot.png)
 
 ---
 
@@ -26,13 +26,13 @@ The package is designed to be simple, predictable, and easy to integrate into ex
 ## 📦 Installation
 
 ```bash
-pip install easy_puss
+pip install easy_pues
 ```
 
 Or install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/AgentschapPlantentuinMeise/easy_puss
+pip install git+https://github.com/AgentschapPlantentuinMeise/easy_pues
 ```
 
 ---
@@ -40,7 +40,7 @@ pip install git+https://github.com/AgentschapPlantentuinMeise/easy_puss
 ## 🚀 Quick Start
 
 ```python
-import easy_puss as ep
+import easy_pues as ep
 import pandas as pd
 
 # Load results and LOD/LOQ tables
@@ -57,7 +57,7 @@ flagged = project.apply_lod_loq_flags(project.results, project.lodq, flag = True
 
 ## 🔬 LOD/LOQ Handling
 
-easy_puss implements the standard interpretation rules:
+easy_pues implements the standard interpretation rules:
 
 | Condition | Output (mask mode) | Output (flag mode) |  
 |----------|---------------------|---------------------|  
@@ -72,7 +72,7 @@ All operations are vectorized and align element names automatically.
 ## 📁 Typical Workflow
 
 1. Export raw ICPOES data  
-2. Load into Python using easy_puss  
+2. Load into Python using easy_pues  
 3. Clean and harmonize element columns  
 4. Apply LOD/LOQ rules  
 5. Export masked or flagged results
